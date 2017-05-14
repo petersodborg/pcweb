@@ -1,0 +1,109 @@
+<!doctype html>
+
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html ng-app="scotchTodo">
+<head>
+	<!-- META -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+	<title>Node/Angular Todo App</title>
+
+	<!-- SCROLLS -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+	<style>
+		html 					{ overflow-y:scroll; }
+		body 					{ padding-top:50px; }
+		#todo-list 				{ margin-bottom:30px; }
+		#todo-form 	 			{ margin-bottom:50px; }
+	</style>
+
+	<!-- SPELLS -->
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script><!-- load angular -->
+
+	<script src="js/controllers/main.js"></script> <!-- load up our controller -->
+	<script src="js/services/todos.js"></script> <!-- load our todo service -->
+	<script src="js/core.js"></script> <!-- load our main application -->
+
+</head>
+
+<!-- SET THE CONTROLLER -->
+<body ng-controller="mainController">
+<!--menu navbar-->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					 
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button> <a class="navbar-brand" href="#">PCWEB</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="./index.html">Forside</a>
+						</li>
+						<li class="active">
+							<a href="./about.html">Om mig</a>
+						</li>
+						<li>
+							<a href="./kontakt.html">Kontakt</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+
+					</ul>
+				</div>
+				
+			</nav>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="container">
+<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-6">
+					<img alt="Bootstrap Image Preview" src="./img/peter.jpg" />
+				</div>
+				<div class="col-md-6">
+					<h2>
+						Peter Sodborg Christensen
+					</h2>
+					<p>
+						Er uddannet webintegrator og datamatiker.
+						Jeg er 39 år og fra København nordvest.
+						Har arbejdet med forskellige ting igennem livet, men 
+						er fokuseret på webudvikling og programmering.
+						Har arbejdet et par år som freelance, hvor jeg arbejdede med CMS systemer såsom
+						Drupal og lidt Wordpress.
+						Holder altid øje med nye teknologier og er altid nysgerrig efter at lære nyt.
+					</p>
+					<p>
+						<!--<a class="btn" href="#">View details »</a>-->
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+		</div>
+
+
+				
+
+
+
+</body>
+</html>
